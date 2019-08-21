@@ -16,9 +16,9 @@ class Category extends StatelessWidget {
     @required this.color,
     @required this.iconlocation,
   })  : assert(name != null),
-       assert(color != null),
-       assert(iconlocation != null),
-       super(key: key);
+      assert(color != null),
+      assert(iconlocation != null),
+      super(key: key);
   @override
   
   Widget build(BuildContext context) {

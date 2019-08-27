@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
 
 final _rowHeight = 100.0;
-final _borderRadius = BorderRadius.circular(_rowHeight / 2);
+final _borderRadius = BorderRadius.circular(_rowHeight/2 );
 
 class Category extends StatelessWidget {
     final String name;
@@ -28,13 +28,15 @@ class Category extends StatelessWidget {
         height: _rowHeight,
         child: InkWell(
           borderRadius: _borderRadius,
+          radius: 1000,
+          enableFeedback: true,
           highlightColor: color,
           splashColor: color,
           onTap: () {
             print('I was tapped!');
           },
           child: Padding(
-            padding: EdgeInsets.all(16.0),
+            padding: EdgeInsets.all(8.0),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
